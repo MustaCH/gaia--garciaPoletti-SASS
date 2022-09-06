@@ -1,0 +1,260 @@
+/*--=============================--*/
+/*--GRID INDEX--*/
+/*--=============================--*/
+
+.grid-index {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-areas: 
+	"bienvenidos bienvenidos"
+	"productos productos"
+	"quienes quienes"
+	"contacto-titulo contacto-titulo"
+	"contacto-img contacto-img"
+}
+
+.bienvenidos {grid-area: bienvenidos;}
+.productos {grid-area: productos;}
+.quienes {grid-area: quienes;}
+.contacto-titulo {grid-area: contacto-titulo;}
+.contacto-img {grid-area: contacto-img;}
+
+/*--=============================--*/
+/*--CIERRE GRID INDEX--*/
+/*--=============================--*/
+/*--MENSAJE BIENVENIDA--*/
+/*--=============================--*/
+
+.bienvenidos {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 14%;
+	h1 {
+		color: white;
+	}
+	p {
+		width: 50%;
+		text-align: center;
+		padding-right: 0%;
+		color: white;
+	}
+}
+
+/*--=============================--*/
+/*--CIERRE MENSAJE BIENVENIDA--*/
+/*--=============================--*/
+/*--SECCION PRODUCTOS--*/
+/*--=============================--*/
+
+.productos {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 4%;
+	overflow: hidden;
+	h2 {
+		margin: 3%;
+		transition: all .5s;
+			&:hover {
+			transform: scale(1.1,1.1);
+			}
+		a {
+			color: white;
+		}
+	}
+	img {
+		border-radius: 2%;
+	}
+}
+
+/*--=============================--*/
+/*--CIERRE SECCION PRODUCTOS-->
+/*--=============================--*/
+/*--SECCION QUIENES--*/
+/*--=============================--*/
+
+.quienes {
+	display: flex;
+	justify-content: center;
+		.quienes-contenido {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		background-color: $color-light;
+		border-radius: 2%;
+		text-align: right;
+		margin-top: 7%;
+		width: 48%;
+		padding: 4.87%;
+		article {
+		width: 50%;
+		padding-right: 5%;
+			p {
+				font-size: 1rem;
+				a {
+					color: $color-hard;
+					text-decoration: underline;
+				}
+			}
+		}
+		a {
+			img {
+				width: 100%;
+				border-radius: 2%;
+			}
+		}
+	}
+}
+
+/*--=============================--*/
+/*--CIERRE SECCION QUIENES--*/
+/*--=============================--*/
+/*--SECCION CONTACTO--*/
+/*--=============================--*/
+
+.contacto-titulo {
+	text-align: center;
+	margin-top: 7%;
+	margin-bottom: 3%;
+	transition: all 1s;
+		&:hover {
+		transform: scale(1.2,1.2);
+	}
+		a {
+			color: $color-light;
+		}
+}
+
+.contacto-img {
+	display: flex;
+	justify-content: space-evenly;
+	padding-left: 5%;
+	padding-right: 5%;
+		.logosContacto {
+		transition: all 1s;
+			&:hover {
+			transform: scale(1.2,1.2);
+		}
+	}
+}
+
+/*--=============================--*/
+/*--CIERRE SECCION CONTACTO--*/
+/*--=============================--*/
+/*--MEDIA QUERIE MOBILE--*/
+/*===============================--*/
+
+@media only screen and (max-width: 768px){
+	.grid-index {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: auto auto auto auto auto;
+		grid-template-areas: 
+		"bienvenidos"
+		"productos"
+		"quienes"
+		"contacto-titulo"
+		"contacto-img"
+	}
+
+	.bienvenidos {grid-area: bienvenidos;}
+	.productos {grid-area: productos;}
+	.quienes {grid-area: quienes;}
+	.contacto-titulo {grid-area: contacto-titulo;}
+	.contacto-img {grid-area: contacto-img;}
+
+/*--=============================--*/
+/*--MENSAJE BIENVENIDA--*/
+/*--=============================--*/
+
+	.bienvenidos {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		font-family: Questrial;
+		margin: 8%;
+			h1 {
+				color: white;
+				font-size: 1.5rem;				
+			}
+			p {
+				display: none;
+			}
+	}
+
+/*--=============================--*/
+/*--CIERRE MENSAJE BIENVENIDA--*/
+/*--=============================--*/
+/*--SECCION PRODUCTOS--*/
+/*--=============================--*/
+
+	.productos {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		color: white;
+		margin-top: 4%;
+		overflow: hidden;
+		h2 {
+			margin: 3%;
+			font-size: 1.7rem;			
+		}
+		img {
+			border-radius: 2%;
+			width: 85%;
+			margin-left: 7.8%;			
+		}
+	}
+
+/*--=============================--*/
+/*--CIERRE SECCION PRODUCTOS-->
+/*--=============================--*/
+/*--SECCION QUIENES--*/
+/*--=============================--*/
+
+	.quienes {
+		display: flex;
+		justify-self: center;
+		width: 90%;
+		.quienes-contenido {
+			display: flex;
+			flex-direction: column-reverse;
+			width: 100%;
+			.quienes-texto {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				width: 100%;
+				}
+			.quienes-img {
+			width: 100%;
+			}
+	}
+
+
+/*--=============================--*/
+/*--CIERRE SECCION QUIENES--*/
+/*--=============================--*/
+/*--SECCION CONTACTO--*/
+/*--=============================--*/
+
+	.contacto-titulo {
+		text-align: center;
+		margin-top: 7%;
+		margin-bottom: 3%;
+	}
+
+	.contacto-img {
+		display: flex;
+		justify-content: space-between;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+}
