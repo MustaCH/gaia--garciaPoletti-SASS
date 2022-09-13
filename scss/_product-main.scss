@@ -1,0 +1,177 @@
+@media only screen and (max-width: 768px){
+	
+	.grid-container-general-prod {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+	grid-template-areas: 
+	"intro-productos"
+	"titulo-jabon"
+	"jabon-solido"
+	"jabon-masajeador"
+	"shampoo-solido"
+	"titulo-cremas"
+	"crema-higia" 
+	"crema-lavanda" 
+	"crema-perse"
+	"titulo-boxes-kits"
+	"box-triana" 
+	"box-jabones" 
+	"kit-shower";
+	}
+	
+	.intro-productos {grid-area: intro-productos;}
+	.titulo-jabon {grid-area: titulo-jabon;}
+	.jabon-solido {grid-area: jabon-solido;}
+	.jabon-masajeador {grid-area: jabon-masajeador;}
+	.shampoo-solido {grid-area: shampoo-solido;}
+	.titulo-cremas {grid-area: titulo-cremas;}
+	.crema-higia {grid-area: crema-higia;}
+	.crema-lavanda {grid-area: crema-lavanda;}
+	.crema-perse {grid-area: crema-perse;}
+	.titulo-boxes-kits {grid-area: titulo-boxes-kits;}
+	.box-triana {grid-area: box-triana;}
+	.box-jabones {grid-area: box-jabones;}
+	.kit-shower {grid-area: kit-shower;}
+
+}
+
+
+
+
+
+
+
+
+
+
+/*--=============================--*/
+/*--GRID PRODUCTOS MAIN--*/
+/*--=============================--*/
+.grid-container-general-prod {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto auto auto auto auto;
+	grid-template-areas: 
+	"intro-productos intro-productos intro-productos"
+	"titulo-jabon titulo-jabon titulo-jabon"
+	"jabon-solido jabon-masajeador shampoo-solido"
+	"titulo-cremas titulo-cremas titulo-cremas"
+	"crema-higia crema-lavanda crema-perse"
+	"titulo-boxes-kits titulo-boxes-kits  titulo-boxes-kits"
+	"box-triana box-jabones kit-shower";
+}
+
+.intro-productos {grid-area: intro-productos;}
+.titulo-jabon {grid-area: titulo-jabon;}
+.jabon-solido {grid-area: jabon-solido;}
+.jabon-masajeador {grid-area: jabon-masajeador;}
+.shampoo-solido {grid-area: shampoo-solido;}
+.titulo-cremas {grid-area: titulo-cremas;}
+.crema-higia {grid-area: crema-higia;}
+.crema-lavanda {grid-area: crema-lavanda;}
+.crema-perse {grid-area: crema-perse;}
+.titulo-boxes-kits {grid-area: titulo-boxes-kits;}
+.box-triana {grid-area: box-triana;}
+.box-jabones {grid-area: box-jabones;}
+.kit-shower {grid-area: kit-shower;}
+
+/*--=============================--*/
+/*--CIERRE GRID PRODUCTOS MAIN--*/
+/*--=============================--*/	
+/*--MENSAJE BIENVENIDA--*/
+/*--=============================--*/
+
+.intro-productos {
+	@extend .bienvenidos;
+	margin: 8%;
+}
+
+/*--=============================--*/	
+/*--CIERRE MENSAJE BIENVENIDA--*/
+/*--=============================--*/
+/*--SECCION JABONES Y SHAMPOOO--*/
+/*--=============================--*/
+
+.titulo-jabon {
+	text-align: center;
+	font-family: Questrial;
+	color: white;
+	margin: 4%;
+}
+
+.jabon-solido {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: $color-light;
+	padding: 4%;
+	width: 85%;
+	border-radius: 5%;
+	justify-self: center;
+		img {
+			border-radius: 5%;
+		}
+		h3 {
+			font-size: 1.5rem;
+			a {
+				color: black;
+			}
+		}
+}
+
+.jabon-masajeador {
+	@extend .jabon-solido;
+}
+
+.shampoo-solido {
+	@extend .jabon-solido;
+}
+
+/*--=================================--*/
+/*--CIERRE SECCION JABONES Y SHAMPOOO--*/
+/*--=================================--*/
+/*--SECCION CREMAS FACIALES--*/
+/*--=============================--*/
+
+.titulo-cremas {
+	@extend .titulo-jabon;
+}
+
+.crema-higia {
+	@extend .jabon-solido;
+}
+
+.crema-lavanda {
+	@extend .jabon-solido;
+}
+
+.crema-perse {
+	@extend .jabon-solido;
+}
+
+/*--==============================--*/
+/*--CIERRE SECCION CREMAS FACIALES--*/
+/*--==============================--*/
+/*--SECCION BOXES Y KITS--*/
+/*--==============================--*/
+
+.titulo-boxes-kits {
+	@extend .titulo-jabon;
+}
+
+.box-triana {
+	@extend .jabon-solido;
+}
+
+.box-jabones {
+	@extend .jabon-solido;
+}
+
+.kit-shower {
+	@extend .jabon-solido;
+}
+
+/*--==============================--*/
+/*--CIERRE SECCION BOXES Y KITS--*/
+/*--==============================--*/

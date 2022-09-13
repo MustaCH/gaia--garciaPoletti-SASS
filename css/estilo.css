@@ -19,6 +19,19 @@ a {
   font-family: Questrial;
   font-weight: bolder; }
 
+.btn-ver-mas {
+  display: flex;
+  width: 70%;
+  height: 20px;
+  background-color: black;
+  padding: 4%;
+  align-items: center;
+  justify-content: center;
+  border-radius: .5em; }
+  .btn-ver-mas a {
+    font-size: 1rem;
+    color: white; }
+
 header {
   display: flex;
   flex-direction: row;
@@ -122,7 +135,7 @@ footer {
   grid-template-rows: auto auto auto auto auto;
   grid-template-areas: "bienvenidos bienvenidos" "productos productos" "quienes quienes" "contacto-titulo contacto-titulo" "contacto-img contacto-img"; }
 
-.bienvenidos {
+.bienvenidos, .intro-productos {
   grid-area: bienvenidos; }
 
 .productos {
@@ -142,15 +155,15 @@ footer {
 /*--=============================--*/
 /*--MENSAJE BIENVENIDA--*/
 /*--=============================--*/
-.bienvenidos {
+.bienvenidos, .intro-productos {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin: 14%; }
-  .bienvenidos h1 {
+  .bienvenidos h1, .intro-productos h1 {
     color: white; }
-  .bienvenidos p {
+  .bienvenidos p, .intro-productos p {
     width: 50%;
     text-align: center;
     padding-right: 0%;
@@ -244,7 +257,7 @@ footer {
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto auto;
     grid-template-areas: "bienvenidos" "productos" "quienes" "contacto-titulo" "contacto-img"; }
-  .bienvenidos {
+  .bienvenidos, .intro-productos {
     grid-area: bienvenidos; }
   .productos {
     grid-area: productos; }
@@ -257,17 +270,17 @@ footer {
   /*--=============================--*/
   /*--MENSAJE BIENVENIDA--*/
   /*--=============================--*/
-  .bienvenidos {
+  .bienvenidos, .intro-productos {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     font-family: Questrial;
     margin: 8%; }
-    .bienvenidos h1 {
+    .bienvenidos h1, .intro-productos h1 {
       color: white;
       font-size: 1.5rem; }
-    .bienvenidos p {
+    .bienvenidos p, .intro-productos p {
       display: none; }
   /*--=============================--*/
   /*--CIERRE MENSAJE BIENVENIDA--*/
@@ -323,3 +336,133 @@ footer {
       justify-content: space-between;
       margin-left: 5%;
       margin-right: 5%; } }
+
+@media only screen and (max-width: 768px) {
+  .grid-container-general-prod {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "intro-productos" "titulo-jabon" "jabon-solido" "jabon-masajeador" "shampoo-solido" "titulo-cremas" "crema-higia"  "crema-lavanda"  "crema-perse" "titulo-boxes-kits" "box-triana"  "box-jabones"  "kit-shower"; }
+  .intro-productos {
+    grid-area: intro-productos; }
+  .titulo-jabon, .titulo-cremas, .titulo-boxes-kits {
+    grid-area: titulo-jabon; }
+  .jabon-solido, .jabon-masajeador, .shampoo-solido, .crema-higia, .crema-lavanda, .crema-perse, .box-triana, .box-jabones, .kit-shower {
+    grid-area: jabon-solido; }
+  .jabon-masajeador {
+    grid-area: jabon-masajeador; }
+  .shampoo-solido {
+    grid-area: shampoo-solido; }
+  .titulo-cremas {
+    grid-area: titulo-cremas; }
+  .crema-higia {
+    grid-area: crema-higia; }
+  .crema-lavanda {
+    grid-area: crema-lavanda; }
+  .crema-perse {
+    grid-area: crema-perse; }
+  .titulo-boxes-kits {
+    grid-area: titulo-boxes-kits; }
+  .box-triana {
+    grid-area: box-triana; }
+  .box-jabones {
+    grid-area: box-jabones; }
+  .kit-shower {
+    grid-area: kit-shower; } }
+
+/*--=============================--*/
+/*--GRID PRODUCTOS MAIN--*/
+/*--=============================--*/
+.grid-container-general-prod {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-areas: "intro-productos intro-productos intro-productos" "titulo-jabon titulo-jabon titulo-jabon" "jabon-solido jabon-masajeador shampoo-solido" "titulo-cremas titulo-cremas titulo-cremas" "crema-higia crema-lavanda crema-perse" "titulo-boxes-kits titulo-boxes-kits  titulo-boxes-kits" "box-triana box-jabones kit-shower"; }
+
+.intro-productos {
+  grid-area: intro-productos; }
+
+.titulo-jabon, .titulo-cremas, .titulo-boxes-kits {
+  grid-area: titulo-jabon; }
+
+.jabon-solido, .jabon-masajeador, .shampoo-solido, .crema-higia, .crema-lavanda, .crema-perse, .box-triana, .box-jabones, .kit-shower {
+  grid-area: jabon-solido; }
+
+.jabon-masajeador {
+  grid-area: jabon-masajeador; }
+
+.shampoo-solido {
+  grid-area: shampoo-solido; }
+
+.titulo-cremas {
+  grid-area: titulo-cremas; }
+
+.crema-higia {
+  grid-area: crema-higia; }
+
+.crema-lavanda {
+  grid-area: crema-lavanda; }
+
+.crema-perse {
+  grid-area: crema-perse; }
+
+.titulo-boxes-kits {
+  grid-area: titulo-boxes-kits; }
+
+.box-triana {
+  grid-area: box-triana; }
+
+.box-jabones {
+  grid-area: box-jabones; }
+
+.kit-shower {
+  grid-area: kit-shower; }
+
+/*--=============================--*/
+/*--CIERRE GRID PRODUCTOS MAIN--*/
+/*--=============================--*/
+/*--MENSAJE BIENVENIDA--*/
+/*--=============================--*/
+.intro-productos {
+  margin: 8%; }
+
+/*--=============================--*/
+/*--CIERRE MENSAJE BIENVENIDA--*/
+/*--=============================--*/
+/*--SECCION JABONES Y SHAMPOOO--*/
+/*--=============================--*/
+.titulo-jabon, .titulo-cremas, .titulo-boxes-kits {
+  text-align: center;
+  font-family: Questrial;
+  color: white;
+  margin: 4%; }
+
+.jabon-solido, .jabon-masajeador, .shampoo-solido, .crema-higia, .crema-lavanda, .crema-perse, .box-triana, .box-jabones, .kit-shower {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fdfdeb;
+  padding: 4%;
+  width: 85%;
+  border-radius: 5%;
+  justify-self: center; }
+  .jabon-solido img, .jabon-masajeador img, .shampoo-solido img, .crema-higia img, .crema-lavanda img, .crema-perse img, .box-triana img, .box-jabones img, .kit-shower img {
+    border-radius: 5%; }
+  .jabon-solido h3, .jabon-masajeador h3, .shampoo-solido h3, .crema-higia h3, .crema-lavanda h3, .crema-perse h3, .box-triana h3, .box-jabones h3, .kit-shower h3 {
+    font-size: 1.5rem; }
+    .jabon-solido h3 a, .jabon-masajeador h3 a, .shampoo-solido h3 a, .crema-higia h3 a, .crema-lavanda h3 a, .crema-perse h3 a, .box-triana h3 a, .box-jabones h3 a, .kit-shower h3 a {
+      color: black; }
+
+/*--=================================--*/
+/*--CIERRE SECCION JABONES Y SHAMPOOO--*/
+/*--=================================--*/
+/*--SECCION CREMAS FACIALES--*/
+/*--=============================--*/
+/*--==============================--*/
+/*--CIERRE SECCION CREMAS FACIALES--*/
+/*--==============================--*/
+/*--SECCION BOXES Y KITS--*/
+/*--==============================--*/
+/*--==============================--*/
+/*--CIERRE SECCION BOXES Y KITS--*/
+/*--==============================--*/
