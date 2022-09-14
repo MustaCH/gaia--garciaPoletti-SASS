@@ -1,3 +1,7 @@
+/*--===========================--*/
+/*--ESTILOS GENERALES--*/
+/*--===========================--*/
+
 body {
 	margin: 0%;
 	background-image: url(../assets/img/fondo.jpg);
@@ -10,3 +14,29 @@ h1,h2 {
 a {
 	text-decoration: none;
 }
+
+/*--===========================--*/
+/*--CIERRE ESTILOS GENERALES--*/
+/*--===========================--*/
+/*--MIXINS--*/
+/*--===========================--*/
+
+@mixin flex-column-center{
+	display: flex;
+	flex-direction: column;
+	justify-self: center;
+}
+
+/*--===========================--*/
+/*--MAPS--*
+/*--===========================--*/
+
+$box-contacto: (
+	f-family: Questrial,
+	color: white,
+	padding: 0% 5% 0% 5%,
+	width: 22%,
+	border: 1em,
+	bg-color: #e6dead,
+	mg-t: 5%,
+);

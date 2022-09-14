@@ -1,0 +1,185 @@
+.titulo-seccion {
+	@extend .bienvenidos;
+		a {
+			color: white;
+		}
+}
+
+.titulo-producto {
+	@extend .titulo-prod-main;
+}
+
+.imagen-producto {
+	display: flex;
+	justify-content: center;
+		img {
+			width: 80%;
+			border-radius: 1em;
+		}
+}
+
+.formulario-compra {
+	display: flex;
+	flex-direction: column;
+	padding: 8%;
+		input {
+			color: white;
+			font-family: Questrial;
+			font-size: 1rem;
+			font-weight: bolder;
+			background-color: black;
+			padding: 4%;
+			border-radius: .5em;
+		}
+		select {
+			font-family: Questrial;
+			font-weight: bold;
+			padding: 2%;
+			border-radius: .5em;
+		}
+}
+
+.formulario-envio {
+	.label-envio {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+			label {
+				font-family: Questrial;
+				font-weight: bolder;
+				padding: 3%;
+			}
+			img {
+				padding: 3% 3% 3% 1%;
+			}
+	}
+
+	.input-envio {
+		display: flex;
+		justify-content: center;
+			.cp-input {
+				font-family: Questrial;
+				font-weight: bolder;
+				padding: 2%;
+				margin-right: 1.3%;
+				border-radius: .5em;
+			}
+			.calc-input {
+				background-color: black;
+				color: white;
+				font-family: Questrial;
+				font-weight: bolder;
+				border-radius: .5em;
+			}
+	}
+}
+
+.producto-descrip {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: $color-light;
+	border-radius: 1em;
+	margin: 4% 2% 4% 2%;
+	h4 {
+		text-align: center;
+	}
+	ul {
+		font-family: Questrial;
+		width: 80%;
+	}
+	h5 {
+		text-align: center;
+	}
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+	.grid-general-prod {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: auto auto auto auto auto auto;
+		grid-template-areas: 
+		"titulo-seccion"
+		"titulo-producto"
+		"imagen-producto"
+		"formulario-compra"
+		"formulario-envio"
+		"producto-descrip";
+	}
+
+	.titulo-seccion {grid-area: titulo-seccion;}
+	.titulo-producto {grid-area: titulo-producto;}
+	.imagen-producto {grid-area: imagen-producto;}
+	.formulario-compra {grid-area: formulario-compra;}
+	.formulario-envio {grid-area: formulario-envio;}
+	.producto-descrip {grid-area: producto-descrip;}
+
+	.titulo-seccion {
+		margin: 5%;
+	}
+
+	.titulo-producto {
+		margin: 1%;
+	}
+
+	.imagen-producto {
+		justify-content: center;
+		img {
+			width: 28%;
+			border-radius: 2em;
+		}
+	}
+
+	.formulario-compra {
+		display: flex;
+		flex-direction: row;
+		justify-self: center;
+		justify-content: center;
+		width: 30%;
+		padding: 1%;
+		input {
+			padding: 2% 3.5% 2% 3.5%;
+		}
+		select {
+			width: 15%;
+			margin-left: 3%;
+		}
+	}
+
+	.formulario-envio {
+		.label-envio {
+			label {
+				padding: 1%;
+			}
+			img {
+				padding: 1%;
+			}
+		}
+		.input-envio {
+			.cp-input {
+				padding: .5%;
+			}
+			.calc-input {
+				
+			}
+		}
+	}
+
+	.producto-descrip {
+		justify-self: center;
+		width: 30%;
+		margin-bottom: 2%;
+		h4 {
+			font-size: 1.5rem;
+		}
+		p {
+			font-size: 1rem;
+		}
+		h5 {
+			font-size: 1rem;
+		}
+	}
+
+}

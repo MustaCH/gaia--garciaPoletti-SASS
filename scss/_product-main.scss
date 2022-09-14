@@ -1,5 +1,6 @@
-@media only screen and (max-width: 768px){
-	
+/*--======================================--*/
+/*--GRID SETTINGS MOBILE PRODUCTOS MAIN--*/
+/*--===================================--*/
 	.grid-container-general-prod {
 	display: grid;
 	grid-template-columns: 100%;
@@ -34,144 +35,136 @@
 	.box-jabones {grid-area: box-jabones;}
 	.kit-shower {grid-area: kit-shower;}
 
-}
-
-
-
-
-
-
-
-
-
-
-/*--=============================--*/
-/*--GRID PRODUCTOS MAIN--*/
-/*--=============================--*/
-.grid-container-general-prod {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: auto auto auto auto auto auto auto;
-	grid-template-areas: 
-	"intro-productos intro-productos intro-productos"
-	"titulo-jabon titulo-jabon titulo-jabon"
-	"jabon-solido jabon-masajeador shampoo-solido"
-	"titulo-cremas titulo-cremas titulo-cremas"
-	"crema-higia crema-lavanda crema-perse"
-	"titulo-boxes-kits titulo-boxes-kits  titulo-boxes-kits"
-	"box-triana box-jabones kit-shower";
-}
-
-.intro-productos {grid-area: intro-productos;}
-.titulo-jabon {grid-area: titulo-jabon;}
-.jabon-solido {grid-area: jabon-solido;}
-.jabon-masajeador {grid-area: jabon-masajeador;}
-.shampoo-solido {grid-area: shampoo-solido;}
-.titulo-cremas {grid-area: titulo-cremas;}
-.crema-higia {grid-area: crema-higia;}
-.crema-lavanda {grid-area: crema-lavanda;}
-.crema-perse {grid-area: crema-perse;}
-.titulo-boxes-kits {grid-area: titulo-boxes-kits;}
-.box-triana {grid-area: box-triana;}
-.box-jabones {grid-area: box-jabones;}
-.kit-shower {grid-area: kit-shower;}
-
-/*--=============================--*/
-/*--CIERRE GRID PRODUCTOS MAIN--*/
 /*--=============================--*/	
 /*--MENSAJE BIENVENIDA--*/
 /*--=============================--*/
 
-.intro-productos {
-	@extend .bienvenidos;
-	margin: 8%;
-}
+	.intro-productos {
+		@extend .bienvenidos
+	}
 
-/*--=============================--*/	
-/*--CIERRE MENSAJE BIENVENIDA--*/
-/*--=============================--*/
-/*--SECCION JABONES Y SHAMPOOO--*/
-/*--=============================--*/
+	.titulo-prod-main {
+		text-align: center;
+		font-family: Questrial;
+		color: white;
+		margin: 4%;
+	}
 
-.titulo-jabon {
-	text-align: center;
-	font-family: Questrial;
-	color: white;
-	margin: 4%;
-}
-
-.jabon-solido {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: $color-light;
-	padding: 4%;
-	width: 85%;
-	border-radius: 5%;
-	justify-self: center;
-		img {
-			border-radius: 5%;
-		}
-		h3 {
-			font-size: 1.5rem;
-			a {
-				color: black;
+	.card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-self: center;
+		background-color: $color-light;
+		margin-top: 5%;
+		padding: 4%;
+		width: 85%;
+		border-radius: 5%;
+			img {
+				border-radius: 5%;
+				width: 100%;
 			}
+			h3 {
+				font-size: 1.5rem;
+				a {
+					color: black;
+					width: 100%;
+				}
+			}
+	}
+
+/*--======================================--*/
+/*--CIERRE SETTINGS CONTENIDO PRODUCT MAIN--*/
+/*--======================================--*/
+/*--MEDIA QUERIE DESKTOP PRODUCTOS MAIN--*/
+/*--===================================--*/
+@media only screen and (min-width: 1024px){
+
+	.grid-container-general-prod {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto auto auto auto auto auto auto;
+		grid-template-areas: 
+		"intro-productos intro-productos intro-productos"
+		"titulo-jabon titulo-jabon titulo-jabon"
+		"jabon-solido jabon-masajeador shampoo-solido"
+		"titulo-cremas titulo-cremas titulo-cremas"
+		"crema-higia crema-lavanda crema-perse"
+		"titulo-boxes-kits titulo-boxes-kits  titulo-boxes-kits"
+		"box-triana box-jabones kit-shower";
+	}
+
+	.intro-productos {grid-area: intro-productos;}
+	.titulo-jabon {grid-area: titulo-jabon;}
+	.jabon-solido {grid-area: jabon-solido;}
+	.jabon-masajeador {grid-area: jabon-masajeador;}
+	.shampoo-solido {grid-area: shampoo-solido;}
+	.titulo-cremas {grid-area: titulo-cremas;}
+	.crema-higia {grid-area: crema-higia;}
+	.crema-lavanda {grid-area: crema-lavanda;}
+	.crema-perse {grid-area: crema-perse;}
+	.titulo-boxes-kits {grid-area: titulo-boxes-kits;}
+	.box-triana {grid-area: box-triana;}
+	.box-jabones {grid-area: box-jabones;}
+	.kit-shower {grid-area: kit-shower;}
+
+	/*--=============================--*/
+	/*--CIERRE GRID PRODUCTOS MAIN--*/
+	/*--=============================--*/	
+	/*--MENSAJE BIENVENIDA--*/
+	/*--=============================--*/
+
+	.intro-productos {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		margin: 8%;
+		h1 {
+			color: white;
 		}
+		p {
+			width: 50%;
+			text-align: center;
+			padding-right: 0%;
+			color: white;
+		}
+	}
+
+	/*--=============================--*/	
+	/*--CIERRE MENSAJE BIENVENIDA--*/
+	/*--===============================--*/
+	/*--SETTINGS CONTENIDO PRODUCT MAIN--*/
+	/*--===============================--*/
+
+	.titulo-prod-main {
+		text-align: center;
+		font-family: Questrial;
+		color: white;
+		margin: 4%;
+	}
+
+	.card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: $color-light;
+		padding: 4%;
+		width: 85%;
+		border-radius: 5%;
+		justify-self: center;
+			img {
+				border-radius: 5%;
+			}
+			h3 {
+				font-size: 1.5rem;
+				a {
+					color: black;
+					width: 100%;
+				}
+			}
+	}
+/*--======================================--*/
+/*--CIERRE SETTINGS CONTENIDO PRODUCT MAIN--*/
+/*--======================================--*/
 }
-
-.jabon-masajeador {
-	@extend .jabon-solido;
-}
-
-.shampoo-solido {
-	@extend .jabon-solido;
-}
-
-/*--=================================--*/
-/*--CIERRE SECCION JABONES Y SHAMPOOO--*/
-/*--=================================--*/
-/*--SECCION CREMAS FACIALES--*/
-/*--=============================--*/
-
-.titulo-cremas {
-	@extend .titulo-jabon;
-}
-
-.crema-higia {
-	@extend .jabon-solido;
-}
-
-.crema-lavanda {
-	@extend .jabon-solido;
-}
-
-.crema-perse {
-	@extend .jabon-solido;
-}
-
-/*--==============================--*/
-/*--CIERRE SECCION CREMAS FACIALES--*/
-/*--==============================--*/
-/*--SECCION BOXES Y KITS--*/
-/*--==============================--*/
-
-.titulo-boxes-kits {
-	@extend .titulo-jabon;
-}
-
-.box-triana {
-	@extend .jabon-solido;
-}
-
-.box-jabones {
-	@extend .jabon-solido;
-}
-
-.kit-shower {
-	@extend .jabon-solido;
-}
-
-/*--==============================--*/
-/*--CIERRE SECCION BOXES Y KITS--*/
-/*--==============================--*/
