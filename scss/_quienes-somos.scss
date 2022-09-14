@@ -23,20 +23,20 @@
 		text-align: center;
 		color: white;
 		width: 90%;
-		margin-top: map-get($box-contacto, mg-t);
+		margin-top: map-get($box, mg-t);
 	}
 
 	.pres-owner1 {
 		@include flex-column-center;
-		font-family: map-get($box-contacto, f-family);
-		color: map-get($box-contacto, color);
-		padding: map-get($box-contacto, padding);
+		font-family: map-get($box, f-family);
+		color: map-get($box, color);
+		padding: map-get($box, padding);
 		justify-self: center;
 		width: 88%;
-		border-radius: map-get($box-contacto, border);
-		background-color: map-get($box-contacto, bg-color);
+		border-radius: map-get($box, border);
+		background-color: map-get($box, bg-color);
 		text-align: center;
-		margin-top: map-get($box-contacto, mg-t);
+		margin-top: map-get($box, mg-t);
 	}
 
 	.pres-owner2 {
@@ -48,9 +48,9 @@
 		flex-direction: column-reverse;
 		align-items: center;
 		justify-self: center;
-		color: map-get($box-contacto, color);
-		border-radius: map-get($box-contacto, border);
-		margin-top: map-get($box-contacto, mg-t);
+		color: map-get($box, color);
+		border-radius: map-get($box, border);
+		margin-top: map-get($box, mg-t);
 		width: 90%;
 		margin-top: 3%;
 		background-color: $color-hard;
@@ -64,7 +64,7 @@
 			}
 			iframe {
 				margin: 2%;
-				border-radius: map-get($box-contacto, border);
+				border-radius: map-get($box, border);
 				width: 90%;	
 			}
 	}	
@@ -110,7 +110,7 @@
 		text-align: center;
 		color: white;
 		width: 30%;
-		margin-top: map-get($box-contacto, mg-t);
+		margin-top: map-get($box, mg-t);
 	}
 
 	/*--================================--*/
@@ -121,26 +121,26 @@
 
 	.pres-owner1 {
 		@include flex-column-center;
-		font-family: map-get($box-contacto, f-family);
-		color: map-get($box-contacto, color);
-		padding: map-get($box-contacto, padding);
-		width: map-get($box-contacto, width);
-		border-radius: map-get($box-contacto, border);
-		background-color: map-get($box-contacto, bg-color);
+		font-family: map-get($box, f-family);
+		color: map-get($box, color);
+		padding: map-get($box, padding);
+		width: map-get($box, width);
+		border-radius: map-get($box, border);
+		background-color: map-get($box, bg-color);
 		text-align: center;
-		margin-top: map-get($box-contacto, mg-t);
+		margin-top: map-get($box, mg-t);
 	}
 
 	.pres-owner2 {
 		@include flex-column-center;
-		font-family: map-get($box-contacto, f-family);
-		color: map-get($box-contacto, color);
-		padding: map-get($box-contacto, padding);
-		width: map-get($box-contacto, width);
-		border-radius: map-get($box-contacto, border);
-		background-color: map-get($box-contacto, bg-color);
+		font-family: map-get($box, f-family);
+		color: map-get($box, color);
+		padding: map-get($box, padding);
+		width: map-get($box, width);
+		border-radius: map-get($box, border);
+		background-color: map-get($box, bg-color);
 		text-align: center;
-		margin-top: map-get($box-contacto, mg-t);
+		margin-top: map-get($box, mg-t);
 	}
 
 	/*--================================--*/
@@ -154,8 +154,8 @@
 		flex-direction: row;
 		justify-self: center;
 		align-items: center;
-		color: map-get($box-contacto, color);
-		border-radius: map-get($box-contacto, border);
+		color: map-get($box, color);
+		border-radius: map-get($box, border);
 		width: 40%;
 		margin-top: 3%;
 		background-color: $color-hard;
@@ -168,7 +168,7 @@
 			}
 			iframe {
 				margin: 2%;
-				border-radius: map-get($box-contacto, border);		
+				border-radius: map-get($box, border);		
 			}
 	}
 
