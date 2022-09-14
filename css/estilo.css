@@ -251,9 +251,9 @@ footer {
   justify-content: space-evenly;
   padding-left: 5%;
   padding-right: 5%; }
-  .contacto-img .logosContacto {
+  .contacto-img .logos-contacto {
     transition: all 1s; }
-    .contacto-img .logosContacto:hover {
+    .contacto-img .logos-contacto:hover {
       transform: scale(1.2, 1.2); }
 
 /*--=============================--*/
@@ -779,3 +779,62 @@ footer {
   /*--================================--*/
   /*--CIERRE VIDEO PRESENTACION/TEXTO-*/
   /*--================================--*/ }
+
+.grid-contacto {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "intro-seccion" "form-contacto" "rrss"; }
+
+.intro-seccion {
+  grid-area: intro-seccion; }
+
+.form-contacto {
+  grid-area: form-contacto; }
+
+.rrss {
+  grid-area: rrss; }
+
+.form-contacto {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  background-color: #c5b475;
+  justify-content: center;
+  padding: 3%;
+  width: 28%;
+  font-family: Questrial;
+  font-weight: bolder;
+  color: white;
+  margin-top: 4%;
+  border-radius: 1em; }
+  .form-contacto input {
+    margin-top: 3%;
+    border-radius: .3em;
+    border-color: white;
+    background-color: white;
+    color: black;
+    font-family: Questrial; }
+  .form-contacto textarea {
+    border-radius: .4em;
+    border-color: white;
+    background-color: white;
+    color: black;
+    font-family: Questrial;
+    font-size: 1rem;
+    font-weight: bolder; }
+  .form-contacto .enviar, .form-contacto .reset {
+    background-color: white;
+    color: black;
+    font-family: Questrial;
+    font-weight: bolder;
+    border-radius: .5em;
+    padding: 3%; }
+
+.rrss-titulo {
+  text-align: center;
+  color: #fdfdeb;
+  margin-top: 7%;
+  margin-bottom: 3%;
+  transition: all 1s; }

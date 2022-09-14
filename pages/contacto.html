@@ -6,13 +6,13 @@
 	<link rel="stylesheet" href="../css/estilo.css">
 	<title>GAIA - Contacto</title>
 </head>
-<body class="gridContainerContacto">
+<body>
 	<!--========================================-->
 	<!--NAVBAR-->
 	<!--========================================-->
 	<header>
 		<div class="logo-navbar">
-			<a href="#"><img src="../assets/img/logo-gaia.png" alt="logo gaia"></a>
+			<a href="../index.html"><img src="../assets/img/logo-gaia.png" alt="logo gaia"></a>
 		</div>
 			<nav class="navbar">	
 				<ul>
@@ -33,9 +33,11 @@
 	<!--======================================-->
 	<!-- CIERRE NAVBAR -->
 	<!--======================================-->
+	<div class="grid-contacto">
+	<!--======================================-->
 	<!--INTRODUCCION-->
 	<!--======================================-->
-	<main class="introSeccionCT">
+	<main class="intro-seccion">
 		<h1>CONTACTO</h1>
 		<p>Completá con tus datos y envianos tu mensaje!</p>
 	</main>
@@ -44,9 +46,9 @@
 	<!--======================================-->
 	<!--FORM CONTACTO-->	
 	<!--======================================-->
-	<form action="" class="formContacto">
-		<label for="nombreCompleto">NOMBRE COMPLETO:</label>
-		<input type="text" name="nombreCompleto"><br>
+	<form action="" class="form-contacto">
+		<label for="nombre-completo">NOMBRE COMPLETO:</label>
+		<input type="text" name="nombre-completo"><br>
 		<label for="email">EMAIL:</label>
 		<input type="text" name="email"><br>
 		<label for="mensaje">TU MENSAJE:</label><br>
@@ -55,8 +57,8 @@
 		<label for="newsletter">SUSCRIBITE AL NEWSLETTER</label>
 		<input type="checkbox" name="newsletter" value="news">
 		</div>
-		<input type="submit" value="ENVIAR">
-		<input type="reset" value="RESTABLECER">
+		<input class="enviar" type="submit" value="ENVIAR">
+		<input class="reset" type="reset" value="RESTABLECER">
 	</form>
 	<!--======================================-->
 	<!--CIERRE FORM CONTACTO-->
@@ -64,15 +66,19 @@
 	<!--CONTACTO-->
 	<!--======================================-->
 	<section class="rrss">
-		<h2 class="redes--title">NUESTRAS REDES SOCIALES</h2>
-		<div class="imgRrss">
-			<a href="https://api.whatsapp.com/" target="_blank"><img class="logo--wpp" src="../assets/img/wpp.png" alt="whatsapp"></a>
-			<a href="https://www.instagram.com/gaia.centroholistico/" target="_blank"><img class="logo--ig" src="../assets/img/ing.png" alt="instagram"></a>
-			<a href="https://www.google.com.ar/" target="_blank"><img class="logo--mail" src="../assets/img/gmail.png" alt="gmail"></a>
+		<div class="rrss-titulo">
+		<h2 class="redes-title">NUESTRAS REDES SOCIALES</h2>
+		</div>
+		<div class="contacto-img">
+			<a class="logos-contacto" href="https://api.whatsapp.com/" target="_blank"><img class="logo-wpp" src="../assets/img/wpp.png" alt="whatsapp"></a>
+			<a class="logos-contacto" href="https://www.instagram.com/gaia.centroholistico/" target="_blank"><img class="logo-ig" src="../assets/img/ing.png" alt="instagram"></a>
+			<a class="logos-contacto" href="https://www.google.com.ar/" target="_blank"><img class="logo-mail" src="../assets/img/gmail.png" alt="gmail"></a>
 		</div>
 	</section>
 	<!--======================================-->
 	<!--CIERRE CONTACTO-->
+	<!--======================================-->
+	</div>
 	<!--======================================-->
 	<!--FOOTER-->
 	<!--======================================-->

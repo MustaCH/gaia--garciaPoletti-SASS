@@ -1,0 +1,64 @@
+.grid-contacto {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto;
+	grid-template-areas: 
+	"intro-seccion"
+	"form-contacto"
+	"rrss"
+}
+
+.intro-seccion {grid-area: intro-seccion;}
+.form-contacto {grid-area: form-contacto;}
+.rrss {grid-area: rrss;}
+
+.form-contacto {
+	display: flex;
+	@include flex-column-center;
+	background-color: $color-hard;
+	justify-content: center;
+	padding: 3%;
+	width: 28%;
+	font-family: Questrial;
+	font-weight: bolder;
+	color: white;
+	margin-top: 4%;
+	border-radius: 1em;
+	input {
+		margin-top: 3%;
+		border-radius: .3em;
+		border-color: white;
+		background-color: white;
+		color: black;
+		font-family: Questrial;
+	}
+	textarea{
+		border-radius: .4em;
+		border-color: white;		
+		background-color: white;
+		color: black;
+		font-family: Questrial;
+		font-size: 1rem;
+		font-weight: bolder;
+	}
+	.enviar {
+		background-color: white;
+		color: black;
+		font-family: Questrial;
+		font-weight: bolder;
+		border-radius: .5em;
+		padding: 3%;
+	}
+
+	.reset {
+		@extend .enviar;
+	}	
+}
+
+.rrss-titulo {
+	text-align: center;
+	color: $color-light;
+	margin-top: 7%;
+	margin-bottom: 3%;
+	transition: all 1s;
+}
