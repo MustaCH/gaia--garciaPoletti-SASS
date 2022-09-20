@@ -17,19 +17,15 @@ a {
 /*--MIXINS--*/
 /*--===========================--*/
 /*--===========================--*/
-/*--MAPS--*
+/*--CIERRE MIXINS--*/
 /*--===========================--*/
-h1, h2, h3, h4, h5 {
-  font-family: Questrial;
-  font-weight: bolder; }
-
-p {
-  font-family: Questrial; }
-
-a {
-  font-family: Questrial;
-  font-weight: bolder; }
-
+/*--MAPS--*/
+/*--===========================--*/
+/*--===========================--*/
+/*--CIERRE MAPS--*/
+/*--===========================--*/
+/*--BOTONES--*/
+/*--===========================--*/
 .btn-ver-mas {
   display: flex;
   width: 70%;
@@ -41,6 +37,20 @@ a {
   .btn-ver-mas a {
     font-size: 1rem;
     color: white; }
+
+/*--===========================--*/
+/*--CIERRE BOTONES--*/
+/*--===========================--*/
+h1, h2, h3, h4, h5 {
+  font-family: Questrial;
+  font-weight: bolder; }
+
+p {
+  font-family: Questrial; }
+
+a {
+  font-family: Questrial;
+  font-weight: bolder; }
 
 header {
   display: flex;
@@ -838,3 +848,7 @@ footer {
   margin-top: 7%;
   margin-bottom: 3%;
   transition: all 1s; }
+
+@media only screen and (max-width: 768px) {
+  .form-contacto {
+    width: 85%; } }

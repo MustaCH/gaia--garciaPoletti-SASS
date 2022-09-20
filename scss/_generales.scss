@@ -28,7 +28,9 @@ a {
 }
 
 /*--===========================--*/
-/*--MAPS--*
+/*--CIERRE MIXINS--*/
+/*--===========================--*/
+/*--MAPS--*/
 /*--===========================--*/
 
 $box: (
@@ -40,3 +42,27 @@ $box: (
 	bg-color: #e6dead,
 	mg-t: 5%,
 );
+
+/*--===========================--*/
+/*--CIERRE MAPS--*/
+/*--===========================--*/
+/*--BOTONES--*/
+/*--===========================--*/
+
+.btn-ver-mas {
+	display: flex;
+	width: 70%;
+	background-color: black;
+	padding: 4%;
+	align-items: center;
+	justify-content: center;
+	border-radius: .5em;
+		a {
+			font-size: 1rem;
+			color: white;
+		}
+}
+
+/*--===========================--*/
+/*--CIERRE BOTONES--*/
+/*--===========================--*/
